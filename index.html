@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabid Hasan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6248efb78b.js" crossorigin="anonymous"></script>
+</head>
+<body data-theme="dark">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">JH</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <div class="theme-icon">🌙</div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="profile-card">
+            <div class="profile-image"><img src="dp.jpg" alt="DP"></div>
+            <h1 class="profile-name">Jabid Hasan</h1>
+            <p class="profile-title">Project Manager & Creative Leader</p>
+            <button class="cta-button" onclick="scrollToContact()">Get In Touch</button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-name">Management</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="95"></div>
+                </div>
+                <div class="skill-percentage">95%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Communication</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="90"></div>
+                </div>
+                <div class="skill-percentage">90%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Organization</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="88"></div>
+                </div>
+                <div class="skill-percentage">88%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Time Management</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="92"></div>
+                </div>
+                <div class="skill-percentage">92%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Creativity</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="85"></div>
+                </div>
+                <div class="skill-percentage">85%</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Presentation</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="87"></div>
+                </div>
+                <div class="skill-percentage">87%</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div>
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I'm Jabid Hasan, a dynamic leader and creative professional with a passion for 
+                    project management and organizational excellence. As a former student of Ideal 
+                    School and College, I've developed strong foundations in leadership and innovation.
+                </p>
+                <br>
+                <p class="about-text">
+                    Currently serving as Project and Workshop Secretary at ISTARC and founder of 
+                    Pixie Pics Bangladesh, I bring creativity and strategic thinking to every project.
+                </p>
+            </div>
+            <div class="highlight-card">
+                <h3 class="highlight-title">Achievements</h3>
+                <ul class="highlight-list">
+                    <li>Campus Ambassador - 5th BAFSD National Science Festival 2023</li>
+                    <li>Campus Ambassador - BRAC University Ovvudoy Robotics Festival 2025</li>
+                    <li>Achiever in Project Display - NDC Science Festival</li>
+                    <li>Founder - Pixie Pics Bangladesh</li>
+                    <li>Project & Workshop Secretary - ISTARC</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="send-button" id="sendButton">
+                <div class="button-content">
+                    <span class="button-text">Send Message</span>
+                    <svg class="paper-plane" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </div>
+                <svg class="mail-envelope" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <svg class="truck" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+                <div class="success-content">
+                    <svg class="checkmark" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    <span>Done!</span>
+                </div>
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jabid Hasan. Crafted with passion and precision.</p>
+    </footer>
+
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+
+        // Theme toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.querySelector('.theme-icon');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        // Smooth scrolling
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Skills animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillItems = entry.target.querySelectorAll('.skill-item');
+                    skillItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('skill-animate');
+                            const progress = item.querySelector('.skill-progress');
+                            const skillValue = progress.getAttribute('data-skill');
+                            setTimeout(() => {
+                                progress.style.width = skillValue + '%';
+                            }, 500);
+                        }, index * 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.querySelector('.skills');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // Scroll animations
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section-title, .profile-card, .highlight-card').forEach(el => {
+            fadeObserver.observe(el);
+        });
+
+        // Contact form animation
+        function handleSubmit(event) {
+            event.preventDefault();
+            console.log('Form submitted! Starting animation...');
+            
+            const button = document.getElementById('sendButton');
+            const buttonContent = button.querySelector('.button-content');
+            const paperPlane = button.querySelector('.paper-plane');
+            const mailEnvelope = button.querySelector('.mail-envelope');
+            const truck = button.querySelector('.truck');
+            const successContent = button.querySelector('.success-content');
+            const buttonText = button.querySelector('.button-text');
+
+            // Disable button during animation
+            button.disabled = true;
+            button.style.pointerEvents = 'none';
+            
+            console.log('Step 1: Hiding text...');
+            // Step 1: Hide text and transform plane to envelope
+            buttonText.style.opacity = '0';
+            buttonText.style.transform = 'translateY(-10px)';
+            
+            setTimeout(() => {
+                console.log('Step 2: Transforming plane...');
+                paperPlane.style.opacity = '0';
+                paperPlane.style.transform = 'scale(0) rotate(180deg)';
+                
+                setTimeout(() => {
+                    console.log('Step 3: Showing envelope...');
+                    mailEnvelope.style.opacity = '1';
+                    mailEnvelope.style.transform = 'translate(-50%, -50%) scale(1)';
+                    
+                    // Step 2: Show truck coming from left
+                    setTimeout(() => {
+                        console.log('Step 4: Truck arriving...');
+                        truck.style.opacity = '1';
+                        truck.style.left = '60px';
+                        
+                        // Step 3: Mail jumps into truck
+                        setTimeout(() => {
+                            console.log('Step 5: Mail jumping into truck...');
+                            mailEnvelope.style.opacity = '0';
+                            mailEnvelope.style.transform = 'translate(-35%, -70%) scale(0.3)';
+                            
+                            // Step 4: Truck drives away to the right
+                            setTimeout(() => {
+                                console.log('Step 6: Truck driving away...');
+                                truck.style.left = '220px';
+                                truck.style.opacity = '0';
+                                
+                                // Step 5: Show success message
+                                setTimeout(() => {
+                                    console.log('Step 7: Showing success...');
+                                    successContent.style.opacity = '1';
+                                    successContent.style.transform = 'translate(-50%, -50%) scale(1)';
+                                    
+                                    // Step 6: Reset everything after 2.5 seconds
+                                    setTimeout(() => {
+                                        console.log('Step 8: Resetting everything...');
+                                        // Reset all elements to initial state
+                                        buttonText.style.opacity = '1';
+                                        buttonText.style.transform = 'translateY(0)';
+                                        paperPlane.style.opacity = '1';
+                                        paperPlane.style.transform = 'scale(1) rotate(0deg)';
+                                        mailEnvelope.style.opacity = '0';
+                                        mailEnvelope.style.transform = 'translate(-50%, -50%) scale(0.5)';
+                                        truck.style.opacity = '0';
+                                        truck.style.left = '-50px';
+                                        successContent.style.opacity = '0';
+                                        successContent.style.transform = 'translate(-50%, -50%) scale(0.8)';
+                                        
+                                        // Re-enable button
+                                        button.disabled = false;
+                                        button.style.pointerEvents = 'auto';
+                                        
+                                        // Clear form fields
+                                        document.getElementById('name').value = '';
+                                        document.getElementById('email').value = '';
+                                        document.getElementById('message').value = '';
+                                        
+                                        // Reset form validation styles
+                                        document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+                                            input.style.borderColor = 'var(--border)';
+                                        });
+                                        
+                                        console.log('Animation complete!');
+                                    }, 2500);
+                                }, 600);
+                            }, 1200);
+                        }, 900);
+                    }, 600);
+                }, 400);
+            }, 400);
+        }
+
+        // Bind the event listener when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const sendButton = document.getElementById('sendButton');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', handleSubmit);
+                console.log('Form event listener attached!');
+            }
+            
+            if (sendButton) {
+                sendButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    handleSubmit(e);
+                    console.log('Button clicked!');
+                });
+                console.log('Button event listener attached!');
+            }
+        });
+
+        // Parallax effect for hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero::before');
+            const speed = scrolled * 0.5;
+        });
+
+        // Enhanced hover effects
+        document.querySelectorAll('.skill-item, .highlight-card, .profile-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+            document.querySelector('.profile-card').style.animation = 'float 6s ease-in-out infinite';
+        });
+
+        // Enhanced cursor interactions
+        document.querySelectorAll('button, a, .skill-item, .highlight-card').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                follower.style.transform = 'scale(1.5)';
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                follower.style.transform = 'scale(1)';
+            });
+        });
+
+        // Dynamic background color animation
+        function animateBackground() {
+            const colors = [
+                'radial-gradient(circle at 30% 20%, rgba(0, 122, 255, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 70% 80%, rgba(255, 107, 107, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 50% 50%, rgba(52, 199, 89, 0.1) 0%, transparent 50%)'
+            ];
+            
+            let currentIndex = 0;
+            setInterval(() => {
+                const hero = document.querySelector('.hero::before');
+                currentIndex = (currentIndex + 1) % colors.length;
+            }, 5000);
+        }
+
+        animateBackground();
+
+        // Add typing effect to profile title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function typing() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, speed);
+                }
+            }
+            typing();
+        }
+
+        // Initialize typing effect when page loads
+        setTimeout(() => {
+            const profileTitle = document.querySelector('.profile-title');
+            typeWriter(profileTitle, 'Project Manager & Creative Leader', 80);
+        }, 1000);
+
+        // Add particle effect (simplified)
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.style.cssText = `
+                position: fixed;
+                width: 4px;
+                height: 4px;
+                background: var(--accent);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 1;
+                opacity: 0.7;
+                left: ${Math.random() * window.innerWidth}px;
+                top: ${window.innerHeight}px;
+                animation: float-up 6s linear forwards;
+            `;
+            
+            document.body.appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 6000);
+        }
+
+        // Add CSS for particle animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float-up {
+                to {
+                    transform: translateY(-${window.innerHeight + 100}px) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Create particles periodically
+        setInterval(createParticle, 3000);
+
+        // Add scroll progress indicator
+        const progressBar = document.createElement('div');
+        progressBar.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), #ff6b6b);
+            z-index: 9999;
+            transition: width 0.1s ease;
+        `;
+        document.body.appendChild(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const scrollProgress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            progressBar.style.width = scrollProgress + '%';
+        });
+
+        // Enhanced form validation with visual feedback
+        document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+                
+                // Validation feedback
+                if (this.value.trim() === '') {
+                    this.style.borderColor = '#ff6b6b';
+                } else {
+                    this.style.borderColor = '#52c759';
+                }
+            });
+        });
+
+        console.log('🚀 Jabid Hasan Portfolio - Designed by Tanvir Mahmud!');
+    </script>
+</body>
+</html>
